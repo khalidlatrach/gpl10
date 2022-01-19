@@ -1,0 +1,18 @@
+<div class="flex justify-around mx-12 bg-gray-100">
+  <!-- primary -->
+  <div class="py-6">
+    <a routerLink="/pl" 
+    class="px-2 py-1 bg-indigo-500 transition transform hover:scale-105 
+    hover:bg-indigo-400 focus:outline-none focus:ring-1 text-white rounded-lg">Personnel</a>
+  </div>
+
+  <!-- secodary -->
+  <div class="flex space-x-6 py-6">
+    <a routerLink="/signin" class="px-2 py-1 bg-gray-500 rounded-lg" (click)="onSignin()" *ngIf="navAuthStatus">Authentification</a>
+  
+  
+
+    
+    <!-- <a routerLink="/signup" class="bg-yellow-500  py-1 px-2 rounded-lg hover:text-white">S'enregistrer</a> -->
+  </div>
+</div>
